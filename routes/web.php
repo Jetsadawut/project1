@@ -15,19 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']) ;
-
 Route::get('/about', [HomeController::class, 'about']) ;
-
 Route::get('/contact', [HomeController::class, 'contact']) ;
+Route::get('/hello/{name}/{age}', [HomeController::class, 'hello']) ;
 
-Route::get('/สวัสดี', function () {
-    return "สวัสดี";
-});
-
-Route::get('/hello/{min}', function ($name) {
-return "สวัสดี $name";
-});
-
-Route::get('/calculater/{num1}/{num2}', function ($num1, $num2) {
-    return "ผลบวกของเลข $num1 และ $num2 คือ " . ($num1 + $num2) ;
-});

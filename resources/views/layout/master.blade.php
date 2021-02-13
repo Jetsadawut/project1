@@ -8,7 +8,7 @@
 </head>
 <body>
     <a href="/">หน้าแรก</a> |  <a href="/about">เกี่ยวกับ</a> |  <a href="/contact">ติดต่อ</a>
-    <h1>สวัสดี Laravel</h1>
+    @yield("content")
     <hr>
     &copy; 2021 Jetsadawut Thungmuangthong
 </body>
